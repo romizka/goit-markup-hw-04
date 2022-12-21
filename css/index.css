@@ -71,6 +71,7 @@ header {
     margin-left: auto;
 }
 
+
 .contact li {
     margin: 0 50px;
 }
@@ -133,6 +134,17 @@ button {
 }
 .contact:active, .contact:hover, .contact:focus {
     color: var(--blue);
+}
+
+.icon-contact {
+    margin-right: 10px;
+    fill: var(--light-grey);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-contact:hover, .icon-contact:focus {
+    fill: var(--blue);
 }
 
 .hero {
@@ -230,12 +242,35 @@ button {
     gap: 30px;
 }
 
+.icon-bgc {
+background-color: var(--beige-2);
+width: 270px;;
+height: 120px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 30px;
+fill: var(--main-grey)
+
+}
+
+.icons-team-section {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    margin-top: 28px;
+    fill: #AFB1B8;
+}
+
+.icon-sm {
+    fill: #AFB1B8;
+}
 .team {
     background-color: var(--beige-2);
 }
 
 .personal-data {
-    padding: 30px 0;
+    padding: 30px 0 42px;
 }
 
 .team-name {
@@ -266,6 +301,17 @@ button {
     border-radius: 0px 0px 4px 4px;
     width: 270px;
 }
+.icon-client {
+    border:1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
 
 footer {
     background-color: var(--dark-grey);
@@ -289,6 +335,11 @@ address {
     font-style: normal;
 }
 
+.join-us {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+}
 .address-link{
     font-size: 14px;
     line-height: 1.71;
