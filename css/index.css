@@ -63,12 +63,12 @@ header {
     display: flex;
     gap: 46px;
 }
-
-    
+  
 .contact-list {
     display:flex;
     gap: 50px;
     margin-left: auto;
+ 
 }
 
 
@@ -124,7 +124,7 @@ button {
 .current {
     color:var(--blue);
     }
-    
+
 .contact-link:active, .contact-link:hover, .contact-link:focus {
     color: var(--blue);
 }
@@ -136,13 +136,14 @@ button {
     letter-spacing: 0.02em;
     color: var(--light-grey);
 }
+
 .contact:active, .contact:hover, .contact:focus {
     color: var(--blue);
 }
 
 .icon-contact {
     margin-right: 10px;
-    fill: var(--light-grey);
+    fill: currentColor;
     display: inline-block;
     vertical-align: middle;
 }
@@ -154,6 +155,7 @@ button {
 .hero {
     background-color: var(--dark-grey);
     padding: 200px 0;
+    background-image: url(/images/main-image.jpg);
 }
 
 .header {
@@ -207,8 +209,17 @@ button {
     padding: 94px 0 94px 0;
 }
 
-/* na stronie dublują się u mnie te paddingi pionowe, nie wiem jak temu zapobiec - myślałam, że jest brana tylko jedna wartość przy margniesach pionowych */
+.section-name {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
 
+
+/* nasze atuty */
 .advantages h3 {
     font-weight: 700;
     font-size: 14px;
@@ -228,14 +239,24 @@ button {
     gap: 30px;
 
 }
-.section-name {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 50px;
-}
+.icon-bgc {
+    background-color: var(--beige-2);
+    width: 270px;;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    fill: var(--main-grey)
+    
+    }
+
+/* nasze atuty koniec */
+
+
+
+/* czym się zajmujemy */
+
 
 .activities {
     padding-top:0;
@@ -246,35 +267,37 @@ button {
     gap: 30px;
 }
 
-.icon-bgc {
-background-color: var(--beige-2);
-width: 270px;;
-height: 120px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 30px;
-fill: var(--main-grey)
+/* czym się zajmujemy koniec */
 
+
+
+/* nasz zespół */
+
+.icons-team-section-box {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 32px 30px 32px;
+}
+
+.icons-team-section:hover, 
+.icons-team-section:focus, 
+.icons-team-section:active {
+cursor: pointer;
+fill: var(--white);
+border-radius: 50%;
+background-color: var(--blue);
 }
 
 .icons-team-section {
-    display: flex;
-    gap: 22px;
-    justify-content: center;
-    margin-top: 28px;
-    fill: #AFB1B8;
+fill: #AFB1B8;
 }
 
-.icon-sm {
-    fill: #AFB1B8;
-}
 .team {
     background-color: var(--beige-2);
 }
 
 .personal-data {
-    padding: 30px 0 42px;
+    padding: 30px 0 16px;
 }
 
 .team-name {
@@ -305,9 +328,25 @@ fill: var(--main-grey)
     border-radius: 0px 0px 4px 4px;
     width: 270px;
 }
+
+/* nasz zespół koniec */
+
+
+
+/* nasi klienci */
+
 .icon-client {
     border:1px solid #AFB1B8;
     border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.icon-client:hover,
+.icon-client:focus,
+.icon-client:active {
+    fill: var(--blue);
+    cursor: pointer;
+    border: 1px solid var(--blue);
 }
 
 .clients {
@@ -317,6 +356,8 @@ fill: var(--main-grey)
 }
 
 
+
+/* stopka */
 footer {
     background-color: var(--dark-grey);
     padding-top: 60px;
@@ -332,6 +373,29 @@ footer {
     color: var(--blue);
     text-decoration: none;
     display: block;
+    margin-bottom: 20px;
+}
+
+.footer-box {
+    display: flex;
+    gap: 70px;
+}
+
+.icons-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white);
+    border-radius: 50%;
+}
+
+.icons-footer:hover,
+.icons-footer:focus,
+.icons-footer:active {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.footer-sm p {
+    margin-top: 12px;
     margin-bottom: 20px;
 }
 
@@ -362,3 +426,5 @@ address {
 .address-transparent {
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* stopka koniec */

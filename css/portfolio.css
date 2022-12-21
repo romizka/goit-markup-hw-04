@@ -76,6 +76,17 @@ section {
     margin: 0 50px;
 }
 
+.icon-contact {
+    margin-right: 10px;
+    fill: currentColor;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-contact:hover, .icon-contact:focus {
+    fill: var(--blue);
+}
+
 button {
     cursor: pointer;
     font-family: inherit;
@@ -125,7 +136,7 @@ button {
 .current {
     color:var(--blue);
     }
-    
+
 .contact-link:active, .contact-link:hover, .contact-link:focus {
     color: var(--blue);
 }
@@ -212,6 +223,7 @@ button {
     padding: 20px 24px;
 }
 
+/* stopka */
 footer {
     background-color: var(--dark-grey);
     padding-top: 60px;
@@ -230,11 +242,39 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer-box {
+    display: flex;
+    gap: 70px;
+}
+
+.icons-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: var(--white);
+    border-radius: 50%;
+}
+
+.icons-footer:hover,
+.icons-footer:focus,
+.icons-footer:active {
+    background-color: var(--blue);
+    cursor: pointer;
+}
+
+.footer-sm p {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
 address {
     font-style: normal;
 }
 
-.address-link {
+.join-us {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+}
+.address-link{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -252,3 +292,5 @@ address {
 .address-transparent {
     color: rgba(255, 255, 255, 0.6);
 }
+
+/* stopka koniec */
