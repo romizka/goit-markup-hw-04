@@ -156,6 +156,9 @@ button {
     background-color: var(--dark-grey);
     padding: 200px 0;
     background-image: url(../images/main-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .header {
