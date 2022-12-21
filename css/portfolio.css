@@ -92,6 +92,8 @@ button {
     text-decoration: none;
 }
 
+
+
 .logo-span {
     color: var(--black)
 }
@@ -120,6 +122,10 @@ button {
     display: block;
 }
 
+.current {
+    color:var(--blue);
+    }
+    
 .contact-link:active, .contact-link:hover, .contact-link:focus {
     color: var(--blue);
 }
