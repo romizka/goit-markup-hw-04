@@ -155,9 +155,12 @@ button {
 .hero {
     background-color: var(--dark-grey);
     padding: 200px 0;
-    background-image: url(../images/main-image.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1600px;
+    height:600px;
+    margin: 0 auto;
 
 }
 
@@ -278,8 +281,21 @@ button {
 
 .icons-team-section-box {
     display: flex;
-    justify-content: space-around;
-    margin: 0 32px 30px 32px;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+
+.icons-team-section {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icons-team-section:hover, 
@@ -291,16 +307,12 @@ border-radius: 50%;
 background-color: var(--blue);
 }
 
-.icons-team-section {
-fill: #AFB1B8;
-}
-
 .team {
     background-color: var(--beige-2);
 }
 
 .personal-data {
-    padding: 30px 0 16px;
+    padding: 30px 0 0;
 }
 
 .team-name {
@@ -325,7 +337,7 @@ fill: #AFB1B8;
     gap: 30px;
 }
 
-.team li {
+.personal-data-box {
     background-color: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -338,18 +350,28 @@ fill: #AFB1B8;
 
 /* nasi klienci */
 
-.icon-client {
+
+.icon-client-link {
     border:1px solid #AFB1B8;
     border-radius: 4px;
-    fill: #AFB1B8;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+}
+.icon-client {
+    fill: currentColor;
 }
 
-.icon-client:hover,
-.icon-client:focus,
-.icon-client:active {
+.icon-client-link:hover,
+.icon-client-link:focus,
+.icon-client-link:active {
     fill: var(--blue);
     cursor: pointer;
     border: 1px solid var(--blue);
+    color: var(--blue);
 }
 
 .clients {
@@ -382,24 +404,7 @@ footer {
 .footer-box {
     display: flex;
     gap: 70px;
-}
-
-.icons-footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--white);
-    border-radius: 50%;
-}
-
-.icons-footer:hover,
-.icons-footer:focus,
-.icons-footer:active {
-    background-color: var(--blue);
-    cursor: pointer;
-}
-
-.footer-sm p {
-    margin-top: 12px;
-    margin-bottom: 20px;
+    align-items: baseline;
 }
 
 address {
@@ -429,5 +434,37 @@ address {
 .address-transparent {
     color: rgba(255, 255, 255, 0.6);
 }
+
+.icons-footer-flex {
+    display: flex;
+    gap: 10px;
+    
+}
+.icons-footer-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+ .icons-footer {
+    fill: var(--white);
+
+    }
+    
+.icons-footer-link:hover,
+.icons-footer-link:focus,
+.icons-footer-link:active {
+    background-color: var(--blue);
+    cursor: pointer;
+    }
+    
+.footer-sm p {
+    margin-bottom: 20px;
+    }
+
 
 /* stopka koniec */

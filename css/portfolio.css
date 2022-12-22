@@ -216,6 +216,9 @@ button {
     flex-wrap: wrap;
     gap: 30px;
 }
+.portfolio-item a {
+    text-decoration: none;
+}
 
 .portfolio-item:hover,
 .portfolio-item:focus,
@@ -253,24 +256,7 @@ footer {
 .footer-box {
     display: flex;
     gap: 70px;
-}
-
-.icons-footer {
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: var(--white);
-    border-radius: 50%;
-}
-
-.icons-footer:hover,
-.icons-footer:focus,
-.icons-footer:active {
-    background-color: var(--blue);
-    cursor: pointer;
-}
-
-.footer-sm p {
-    margin-top: 12px;
-    margin-bottom: 20px;
+    align-items: baseline;
 }
 
 address {
@@ -300,5 +286,37 @@ address {
 .address-transparent {
     color: rgba(255, 255, 255, 0.6);
 }
+
+.icons-footer-flex {
+    display: flex;
+    gap: 10px;
+    
+}
+.icons-footer-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+ .icons-footer {
+    fill: var(--white);
+
+    }
+    
+.icons-footer-link:hover,
+.icons-footer-link:focus,
+.icons-footer-link:active {
+    background-color: var(--blue);
+    cursor: pointer;
+    }
+    
+.footer-sm p {
+    margin-bottom: 20px;
+    }
+
 
 /* stopka koniec */
